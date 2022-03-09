@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Take the User Credentials
-                if(_txtUser.getText().equals("vilma") && _txtPassword.getText().equals("Penelope1!")){
+                if(_txtUser.getText().equals("Vilma") && _txtPassword.getText().equals("Penelope1!")){
                     Intent intent = new Intent (MainActivity.this, user.class);
                     startActivity(intent);
                 }else {
