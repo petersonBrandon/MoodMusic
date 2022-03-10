@@ -18,13 +18,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         _txtPassword=(EditText) findViewById(R.id.txtPassword);
-        _txtUser=(EditText) findViewById(R.id.txtPassword);
+        _txtUser=(EditText) findViewById(R.id.txtUser);
         _bttnLogin=(Button) findViewById(R.id.btnLogin);
         _bttnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //Take the User Credentials
-                if(_txtUser.getText().equals("Vilma") && _txtPassword.getText().equals("Penelope1!")){
+                if(_txtUser.getText().toString().equals("Vilma") && _txtPassword.getText().toString().equals("Penelope1!")){
                     Intent intent = new Intent (MainActivity.this, user.class);
                     startActivity(intent);
                 }else {
