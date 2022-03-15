@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent (MainActivity.this, user.class);
                     startActivity(intent);
                 }else {
-                    Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Invalid User or Password! Try Again!", Toast.LENGTH_SHORT).show();
                 }
             }
         });

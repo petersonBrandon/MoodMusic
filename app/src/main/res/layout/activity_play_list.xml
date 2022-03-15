@@ -7,13 +7,43 @@
     tools:context=".PlayList">
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textView10"
+        android:layout_width="322dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="184dp"
+        android:text="I feel it's comming by DSharp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnStop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="122dp"
-        android:layout_marginTop="48dp"
-        android:text="PLAYLIST"
-        android:textSize="30dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="50dp"
+        android:text="STOP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="63dp"
+        android:text="Add LikeList"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="128dp"
+        android:text="PLAY SONG"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

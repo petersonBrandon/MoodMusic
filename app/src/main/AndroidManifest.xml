@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MoodMusic">
         <activity
+            android:name=".PlaySong"
+            android:exported="false" />
+        <activity
             android:name=".SelectSong"
             android:exported="false" />
         <activity
