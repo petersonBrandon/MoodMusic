@@ -56,27 +56,37 @@
 
         <Button
             android:id="@+id/button3"
-            android:layout_width="61dp"
-            android:layout_height="46dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="9dp"
             android:background="#00393939"
             android:backgroundTint="#5E5E5E"
             app:icon="@android:drawable/ic_dialog_dialer"
             app:iconTint="#FFFFFF"
-            tools:layout_editor_absoluteX="336dp"
-            tools:layout_editor_absoluteY="16dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView6"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="112dp"
+            android:layout_marginEnd="36dp"
             android:text="Mood Music"
             android:textColor="#FFFFFF"
             android:textSize="34sp"
-            tools:layout_editor_absoluteX="112dp"
-            tools:layout_editor_absoluteY="13dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
         android:layout_width="409dp"
         android:layout_height="538dp"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
@@ -97,6 +107,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout5"
             android:layout_width="407dp"
             android:layout_height="351dp"
             android:layout_marginTop="1dp"
@@ -131,6 +142,8 @@
                 android:id="@+id/button6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/image_happy"
+                android:backgroundTint="#4CAF50"
                 android:text="Happy"
                 app:layout_constraintBottom_toTopOf="@+id/button7"
                 app:layout_constraintEnd_toStartOf="@+id/button8"

@@ -13,6 +13,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="84dp"
         android:text="What is your mood today?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -21,40 +22,40 @@
         android:id="@+id/btnHappy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginBottom="43dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="261dp"
         android:text="HAPPY!"
-        app:layout_constraintBottom_toTopOf="@+id/btnSad"
         app:layout_constraintEnd_toStartOf="@+id/btnAngry"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnSad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="298dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="10dp"
         android:text="Sad"
         app:layout_constraintEnd_toStartOf="@+id/btnRelax"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton6" />
 
     <Button
         android:id="@+id/btnRelax"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="43dp"
-        android:layout_marginEnd="5dp"
+        android:layout_marginEnd="16dp"
         android:text="Relax"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSad"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnSad"
-        app:layout_constraintTop_toBottomOf="@+id/btnAngry" />
+        app:layout_constraintTop_toTopOf="@+id/btnSad" />
 
     <Button
         android:id="@+id/btnAngry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="11dp"
+        android:layout_marginEnd="9dp"
         android:text="ANGRY"
         app:layout_constraintBottom_toBottomOf="@+id/btnHappy"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,12 +64,60 @@
 
     <Button
         android:id="@+id/btnLikeList"
+        style="@style/myButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="46dp"
         android:text="Go to LIKELIST"
+        app:layout_constraintStart_toStartOf="@+id/btnSad"
+        app:layout_constraintTop_toBottomOf="@+id/btnRelax" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRelax"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton6"
+        app:srcCompat="@drawable/image_relax" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnHappy"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton7"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSad" />
+        app:srcCompat="@drawable/happy" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHappy"
+        app:srcCompat="@drawable/image_sad" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAngry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton5"
+        app:layout_constraintTop_toTopOf="@+id/imageButton5"
+        app:srcCompat="@drawable/image_ungry" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

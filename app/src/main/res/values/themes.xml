@@ -22,4 +22,9 @@
     <style name="Theme.MoodMusic.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.MoodMusic.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    
+    <style name="myButton">
+        <item name="backgroundTint">#4CAF50</item>
+        <item name="cornerRadius">20dp</item>
+    </style>
 </resources>
