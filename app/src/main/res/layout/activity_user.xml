@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
     tools:context=".user">
 
     <TextView
@@ -13,6 +14,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="84dp"
         android:text="What is your mood today?"
+        android:textColor="@color/white"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="parent"

@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class LikeList extends AppCompatActivity {
-    Button _btnHome;
+    Button _btnHome, _btnSelectSong;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,5 +25,15 @@ public class LikeList extends AppCompatActivity {
             }
         });
 
+        //Get the selected song
+        _btnSelectSong = (Button) findViewById(R.id.btnSelectSong);
+        _btnSelectSong.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LikeList.this, PlaySong.class);
+                startActivity(intent);
+
+            }
+        });
     }
 }
