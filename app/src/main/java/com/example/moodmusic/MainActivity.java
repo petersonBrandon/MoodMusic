@@ -42,7 +42,10 @@ import java.util.ArrayList;
  */
 public class MainActivity extends AppCompatActivity {
 
-    //START CODE FOR CONNECTION
+     /**
+     *START CODE FOR CONNECTION
+     **/
+    
 //    // This is the connection to the API
 //    private static final String CLIENT_ID = "5e48b58845994c88aba86482d713c202"; // need to change to your client ID to work
 //    private static final String REDIRECT_URI = "com.example.mood2://callback";
@@ -106,7 +109,10 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-//////////SCREENS/////////////////////////////
+     /**
+      *START CODE FOR SCREENS
+     **/
+    
 
     EditText _txtUser, _txtPassword;
     Button _bttnLogin;
