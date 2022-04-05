@@ -24,7 +24,22 @@ import android.widget.Toast;
 
 import java.text.DateFormatSymbols;
 import java.util.ArrayList;
-
+/**
+ * The Mood Music app will have different moods to select from and
+ * give a playlist from Spotify (audio stream service) based on the
+ * selected mood. The Spotify playlist information will be pulled via
+ * Spotify’s API and the information. The main features are:
+ * - User authentication
+ * - User account creation: The user authentication will read the user
+ * - preferences to connect to Spotify account from Mood Music app
+ * - User preferences stored in local storage
+ * - Pull data from Spotify API
+ * - Music controls
+ * - Mood selection
+ * - The application should be built with a user-friendly interface
+ * - Themes
+ * April 1st, 2022 - Ver. 1.0, Team#8
+ */
 public class MainActivity extends AppCompatActivity {
 
     //START CODE FOR CONNECTION
